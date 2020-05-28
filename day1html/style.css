@@ -1,0 +1,14 @@
+.A{
+    color: darkblue;
+    font-size: medium;
+    font-style: italic;
+}
+.B{
+    color: red;
+    font-style: oblique;
+}
+.C{
+    color: yellow;
+    font-size: small;
+    font-style: normal;
+}
