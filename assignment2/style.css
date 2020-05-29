@@ -1,0 +1,17 @@
+.A{
+    color: darkblue;
+    font-size: medium;
+    font-style: italic;
+    text-transform: capitalize;
+}
+.B{
+    color: red;
+    font-style: oblique;
+    text-transform: uppercase;
+}
+.C{
+    color: yellow;
+    font-size: small;
+    font-style: normal;
+    text-transform: lowercase;
+}
