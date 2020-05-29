@@ -1,0 +1,15 @@
+a{
+    color: lightgreen;
+}
+a:link{
+    color: red;
+    text-decoration: none;
+}
+a:hover{
+    color:yellow;
+    font-size: large;
+    text-decoration: underline;
+}
+a:active{
+    color:blue;
+}
