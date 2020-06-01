@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function myfun()
+            {
+                var a,b;
+                a=document.getElementById("txtusername").value;
+                b=document.getElementById("txtpassword").value;
+                if(a=="admin"&&b=="admin") window.alert("successful");
+                else window.alert("unsucessful");
+            }
+        </script>
+    </head>
+    <body>
+        Username:<input type="text" id="txtusername"/><br><br>
+        password:<input type="text" id="txtpassword"/><br><br>
+        <button type="button" onclick="myfun()">submit</button>
+    </body>
+</html>

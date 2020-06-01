@@ -1,0 +1,9 @@
+.a{
+    border:2px solid blue;
+    text-align: center;
+    color:red;
+}
+div:hover{
+    transform: rotate(80deg);
+    color:yellow;
+}

@@ -1,0 +1,15 @@
+.a{
+    text-shadow: 2px 3px darkblue;
+    color:lightgreen;
+    text-align: center;
+    text-decoration:underline;
+    text-transform:uppercase;
+}
+.b{
+    box-shadow: 2px 5px 4px 3px darkkhaki;
+    width:300px;
+    text-align: center;
+    color:blue;
+    text-shadow: rgb(219, 20, 20);
+    margin-left:100px;
+}
