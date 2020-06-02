@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>roll no validation</title>
+        <script>
+            function myfun()
+            {
+                var val=document.getElementById('txtroll').value;
+                if(/^[2][2][1][7][1][0][3][0][3][0][0-6][[0-9]$/.test(val))
+                {
+                    window.alert('valid');
+                }
+                else{
+                    window.alert('invalid');
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="txtroll"/><br />
+        <button type="button" onclick="myfun()">validate</button>
+    </body>
+    
+</html>

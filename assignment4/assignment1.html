@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>registration page validation</title>
+        <script>
+            function myfun()
+            {
+                var u=document.getElementById("txtusername").value;
+                var p=document.getElementById("txtpass").value;
+                var us=/^[A-Z][a-zA-Z0-9._-]{4,8}$/;
+                var ps= /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+                if(us.test(u)&&ps.test(p)){
+                    window.alert("valid");
+                    return true;
+                }
+                else 
+                {
+                    window.alert("invalid");
+                    return false;
+                }        
+
+            }
+        </script>
+    </head>
+    <body>
+        <label for="username">username</label>
+        <input type="text" id="txtusername"/><br><br>
+        <label for="fullname">fullname</label>
+        <input type="text" id="txtfullname"/><br><br>
+        <label for="department">department</label>
+        <input type="text" id="txtdepart"/><br><br>
+        <label for="address">Address</label>
+        <textarea cols="10" rows="10"></textarea><br><br>
+        <label for="password">Password</label>
+        <input type="text" id="txtpass"/><br><br>
+        <div align="center">
+        <button type="button" onclick=" return myfun()">submit</button>
+        </div>
+    </body>
+</html>
