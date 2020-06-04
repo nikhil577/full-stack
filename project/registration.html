@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>REGISTRATION</title>
+        <link href="style.css" rel="stylesheet"/>
+        <script>
+            function myfun()
+            {
+                var name=document.getElementById('txtname').value; 
+                var email=document.getElementById('txtuser').value;
+                var mob=document.getElementById('txtmobile').value;
+                var yop=document.getElementById('txtp').value;
+                var yoj=document.getElementById('txtj').value;
+                var pin=document.getElementById('txtroll').value;
+                var a=/^[a-zA-Z]{6,15}$/;
+                var b=/^[a-zA-Z0-9.-_]{5,12}[@][a-z]{3,15}[.][a-z]{3,9}$/;
+                var c=/^[6-9][0-9]{9}|$/;
+                var d=/^[2][0][2][1]$/;
+                var e=/^[2][0][1][7]$/;
+                var g=/^[2][2][1][7][1][0][3][0][3][0][0-9][0-9]$/;
+                if(a.test(name)&&b.test(email)&&c.test(mob)&&d.test(yop)&&e.test(yoj)&&g.test(pin))
+                {
+                    window.alert("registration successfull");
+                }
+                else 
+                {
+                     window.alert("unsucessfull registration");
+                }
+
+
+            }
+        </script>
+        
+        
+
+    </head>
+    <body>
+        <div class="a">
+            <img src="nik.jpg" height="=100px" width="100px"/> 
+            <img class="b" src="nik.jpg" height="=100px" width="100px"/>
+            <h1 class="c">REGISTRATION</h1>
+        </div>
+        <div id="x"><br><br>
+        <label for="name">NAME</label>
+        <input type="text" id="txtname"/><br><br>
+        <label for="EMAIL">EMAILID</label>
+        <input type="text" id="txtuser"/><br><br>
+        <label for="mobile">MOBILE NO</label>
+        <input type="text" id="txtmobile"/><br><br>
+        <label for="date">DOB</label>
+        <input type="date" id="txtdob"/><br><br>
+        <label for="yoj">YEAR OF JOINING</label>
+        <input type="text" id="txtj"/><br><br>
+        <label for="yop">YEAR OF PASSOUT</label>
+        <input type="text" id="txtp"/><br><br>
+        <label for="branch">BRANCH</label>
+        <input type="text" id="txtbranch"/><br><br>
+        <label for="roll">PIN NUMBER</label>
+        <input type="text" id="txtroll"/><br><br>
+        <button type="button" onclick="myfun()">submit</button>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login page</title>
+        <link href="style.css" rel="stylesheet"/>
+        <style>
+            #p{
+                text-align: center;
+                border: 2px solid darkblue;
+                margin-top: 10px;
+                background-color: lightsteelblue;
+                padding: 10%;
+            }
+        </style>
+        <script>
+            function myfun()
+            {
+                var u=document.getElementById('txtusername').value;
+                var p=document.getElementById('txtpass').value;
+                var us=/^[2][2][1][7][1][0][3][0][3][0][0-9][0-9]$/;
+                var pi=/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$!]).{5,12}$/;
+                if(us.test(u)&&pi.test(p)) window.alert("login sucessfull");
+                else window.alert('unsucessfull login click on details to know more');
+            }
+        </script>
+    </head>
+    <body>
+        <div class="a">
+            <img src="nik.jpg" height="=100px" width="100px"/> 
+            <img class="b" src="nik.jpg" height="=100px" width="100px"/>
+            <h1 class="c">login</h1>
+        </div>
+        <div id="p"><br>
+            <label for="user">USERNAME</label>
+            <input type="text" id="txtusername" placeholder="enter user pin no"/><br><br>
+            <label for="password">PASSWORD</label>
+            <input type="password" id="txtpass"/><br><br>
+            <button type="button" onclick="myfun()">login</button>
+            <button type="button" onclick="myfun1()">details</button>
+
+        </div>
+    </body>
+</html>

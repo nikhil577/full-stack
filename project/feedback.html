@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>feedback form</title>
+        <link href="style.css" rel="stylesheet"/>
+        <script>
+            function fun()
+            {
+                var p=/^[2][2][1][7][1][0][3][0][3][0][0-9][0-9]$/;
+                var n=/^[a-zA-Z]{6,12}$/;
+                var e=/^[a-zA-Z0-9._-]{6,15}[@][a-z]{5,9}[.][a-z]{3,5}$/;
+                var pi=document.getElementById('txtpin').value;
+                var na=document.getElementById('txtname').value;
+                var em=document.getElementById('txtemail').value;
+                if(p.test(pi)&&n.test(na)&&e.test(em))
+                {
+                  window.alert("feedback completed sucessfully");
+                  
+                }
+                 else {
+                     window.alert("invalid details");
+                    
+                 }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="a">
+            <img src="nik.jpg" height="=100px" width="100px"/> 
+            <img class="b" src="nik.jpg" height="=100px" width="100px"/>
+            <h1 class="c">feedback form</h1>
+        </div>
+        <br>
+        <lable for="PIN">PIN NUMBER</lable>
+            <input type="text" id="txtpin"/><br><br>
+        <lable for="NAME">NAME</lable>
+            <input type="text" id="txtname"/><br><br>
+        <lable for="EMAIL">EMAIL-ID</lable>
+            <input type="text" id="txtemail"/><br><br>
+        <lable for="feedback">FEEDBACK</lable>
+            <textarea cols="10" rows="15"></textarea><br><br>
+            <button type="button" onclick="fun()">submit</button>
+        
+    </body>
+</html>

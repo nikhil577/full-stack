@@ -1,0 +1,38 @@
+.a{
+    border:2px solid black;
+    padding-bottom:22px;
+    background-color:grey;
+    
+
+}
+img{
+    float: left;
+    
+    border:2px solid red;
+}
+.b{
+    float:right;
+}
+.c{
+    text-transform: uppercase;
+    text-align:center;
+    
+}
+.d{
+    
+    
+    border: 2px solid black;
+    text-transform: uppercase;
+    background-color: lightblue;
+    
+}
+ul{
+    display: inline-flex;
+    list-style-type: none;
+    margin-left:40px ;
+
+}
+li{
+    
+    margin:70px;
+}
