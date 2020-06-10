@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>menubar</title>
+        <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css"/>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#a").hide();
+                $("#btn").click(function(){
+                    $("#a").fadeIn(200);
+                     
+                });
+            });
+        </script>
+    </head>
+    <div class="container-fluid" align="center">
+        <div class="list-group" id="a">
+            <a class="list-group-item" href="#">&nbsp; Home</a>
+            <a class="list-group-item" href="#">&nbsp; Product</a>
+            <a class="list-group-item" href="#">&nbsp;Services</a>
+            <a class="list-group-item" href="#">&nbsp; About</a>
+            <a class="list-group-item" href="#">&nbsp;Contact</a>
+        </div>
+        <br />
+        <button type="button" class="btn btn-primary" id="btn">execute fadeIn method</button>
+    </div>
+</html>
