@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#btnclick").click(function(){
+                    var x=$("#txtusername").val();
+                    window.alert(x);
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <input type="text" id="txtusername"/>
+        <button type="button" id="btnclick">getusername</button>
+    </body>
+</html>
