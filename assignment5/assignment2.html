@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>password validation</title>
+        <script>
+            function myfun()
+            {
+                var p=document.getElementById("txtpass").value;
+                var err=document.getElementById("txt");
+                var regx=/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$!]).{6,12}$/;
+                if(regx.test(p)){
+                    window.alert("correct validation");
+                    err.innerHTML="";
+                }
+                else{
+                err.innerHTML="password should contain min of 1 uppercase,1 number and one special character";
+                window.alert("missing validation");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <label for="password">Password</label>
+        <input type="password" id="txtpass"/><br><br>
+        <p id="txt"></p>
+        <button type="button" onclick="myfun()">validate</button>
+    </body>
+</html>
