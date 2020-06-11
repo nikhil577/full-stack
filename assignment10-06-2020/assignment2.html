@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery timer</title>
+        <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css"/>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
+        <script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+        <script  type="text/javascript" src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+               $("#btnstart").click(function(){
+                   $("div").animate({left: '100px'}, 5000);
+                   $("div").animate({fontSize: '3em'}, 5000);
+               });
+  
+               $("#btnstop").click(function(){
+                  $("div").stop();
+               });
+            });
+
+        </script>
+    </head>
+    <body>
+        <button type="button" id="btnstart">Start Animate</button>
+        <button type="button" id="btnstop">Stop Animate</button>
+        <div  style="background-color:#5858;height: 100px;margin: 6px;width: 100px;position:absolute;">hiii</div>
+    </body>
+
+</html>
