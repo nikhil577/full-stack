@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login</title>
+        <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css"/>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#btnclick").click(function(){
+                    var v1=$("#txtuser").val();
+                    var v2=$("#txtemail").val();
+                    var v3=$("#txtmobile").val();
+                    var v4=$("#txtarea").val();
+                    var a=/^[a-zA-Z0-9]{5,16}$/;
+                    var b=/^[a-zA-Z0-9]{6,12}[@][a-z]{5,9}[.][a-z]{3,9}$/;
+                    var c=/^[6-9][0-9]{9}$/;
+                    if(v1=='' && v2=='' && v3=='' && v4=='')
+                    {
+                        $(".form-control").addClass("c");
+                        window.alert("enter all fields");
+                    }
+                    else if(a.test(v1)&&b.test(v2)&&c.test(v3))
+                    {
+                        $(".form-control").removeClass("c");
+
+                        window.alert("successful");            
+                    }
+                })
+            })
+        </script>
+        <style>
+            .c{
+                border: 2px solid red;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <form action="" method="POST">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="txtuser"/>
+                </div>
+                <div class="form-group">
+                    <label for="email">EmailID</label>
+                    <input type="text" class="form-control" id="txtemail"/>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">mobile</label>
+                    <input type="text" class="form-control " id="txtmobile"/>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea cols="10" rows="10"  id="txtarea"></textarea>
+                </div>
+                <button type="button" id="btnclick">sumbit</button>
+            </form>
+            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login</title>
+        <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css"/>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#btnclick").click(function(){
+                    var v1=$("#txtuser").val();
+                    var v2=$("#txtpass").val();
+                    if(v1=='' && v2=='')
+                    {
+                        $('input[type="text"]').css("border","2px solid red");
+                        window.alert("enter username and password");
+                    }
+                })
+            })
+        </script>
+
+    </head>
+    <body>
+        <div class="container">
+            <form action="" method="POST">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="txtuser"/>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="text" class="form-control" id="txtpass"/>
+                </div>
+                <button type="button" id="btnclick">sumbit</button>
+            </form>
+            
+        </div>
+    </body>
+</html>

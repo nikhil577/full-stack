@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>addclass example</title>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript">
+             $(document).ready(function(){
+                 $(".btnclick").click(function(){
+                     $("p").addClass("test");
+                 })
+             })
+        </script>
+        <style>
+            .test{
+                font:30px;
+                font-size: xx-large;
+                font-family: 'Courier New', Courier, monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <p>gitam university</p>
+        <button type="button" class="btnclick">addclass</button>
+    </body>
+</html>
